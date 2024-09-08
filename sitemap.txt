@@ -1,2 +1,2 @@
-https://haydenzhy.github.io/#http://example.com/2024/09/05/hello-world/
-https://haydenzhy.github.io/#http://example.com
+https://haydenzhy.github.io/2024/09/05/hello-world/
+https://haydenzhy.github.io/
