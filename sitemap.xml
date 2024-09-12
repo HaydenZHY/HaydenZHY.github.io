@@ -2,18 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://haydenzhy.github.io/link/</loc>
+    <loc>https://haydenzhy.github.io/2024/09/09/Markdown%E8%AF%AD%E6%B3%95/</loc>
     
-    <lastmod>2024-09-09</lastmod>
+    <lastmod>2024-09-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/2024/09/09/Markdown%E8%AF%AD%E6%B3%95/</loc>
+    <loc>https://haydenzhy.github.io/link/</loc>
     
-    <lastmod>2024-09-09</lastmod>
+    <lastmod>2024-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/categories/</loc>
+    
+    <lastmod>2024-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/</loc>
+    
+    <lastmod>2024-09-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +49,7 @@
 
   <url>
     <loc>https://haydenzhy.github.io/</loc>
-    <lastmod>2024-09-10</lastmod>
+    <lastmod>2024-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,7 +57,7 @@
   
   <url>
     <loc>https://haydenzhy.github.io/tags/Markdown/</loc>
-    <lastmod>2024-09-10</lastmod>
+    <lastmod>2024-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
