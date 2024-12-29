@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://haydenzhy.github.io/temp/</loc>
-    
-    <lastmod>2024-12-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://haydenzhy.github.io/%E5%9B%BE%E5%BA%93/</loc>
     
     <lastmod>2024-12-29</lastmod>
@@ -559,6 +550,20 @@
   </url>
   
   <url>
+    <loc>https://haydenzhy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://haydenzhy.github.io/tags/ACM/</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -574,20 +579,6 @@
   
   <url>
     <loc>https://haydenzhy.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88/</loc>
-    <lastmod>2024-12-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2024-12-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
