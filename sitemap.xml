@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://haydenzhy.github.io/Gallery/Shenyang/Shanghai</loc>
+    
+    <lastmod>2024-12-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://haydenzhy.github.io/Gallery/</loc>
     
     <lastmod>2024-12-30</lastmod>
@@ -335,20 +344,6 @@
 
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/c/</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://haydenzhy.github.io/tags/AlexNet/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -363,7 +358,14 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/PvZ/</loc>
+    <loc>https://haydenzhy.github.io/tags/c/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -398,6 +400,41 @@
   </url>
   
   <url>
+    <loc>https://haydenzhy.github.io/tags/PvZ/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/Java/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/LeNet5/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/Mini-App/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/%E8%85%BE%E8%AE%AF/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://haydenzhy.github.io/tags/ACM/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -419,21 +456,7 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/Mini-App/</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/%E8%85%BE%E8%AE%AF/</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/Java/</loc>
+    <loc>https://haydenzhy.github.io/tags/Markdown/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -441,20 +464,6 @@
   
   <url>
     <loc>https://haydenzhy.github.io/tags/MiniMIPS32/</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/LeNet5/</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/Markdown/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -475,13 +484,6 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/%E5%88%86%E7%9B%98/</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://haydenzhy.github.io/tags/%E4%B9%A0%E6%A6%82/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -489,7 +491,14 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/%E5%8D%95%E8%B0%83%E6%A0%88/</loc>
+    <loc>https://haydenzhy.github.io/tags/%E5%88%86%E7%9B%98/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -503,14 +512,14 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/c/</loc>
+    <loc>https://haydenzhy.github.io/tags/%E5%8D%95%E8%B0%83%E6%A0%88/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
+    <loc>https://haydenzhy.github.io/tags/c/</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
