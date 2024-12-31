@@ -371,20 +371,6 @@
 
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/AlexNet/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/PyTorch/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://haydenzhy.github.io/tags/c/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -393,6 +379,20 @@
   
   <url>
     <loc>https://haydenzhy.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/AlexNet/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/PyTorch/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -553,6 +553,20 @@
   </url>
   
   <url>
+    <loc>https://haydenzhy.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://haydenzhy.github.io/tags/%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://haydenzhy.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -595,20 +609,6 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haydenzhy.github.io/tags/%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://haydenzhy.github.io/tags/%E7%94%9F%E6%97%A5/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -616,7 +616,7 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://haydenzhy.github.io/tags/%E5%A4%A7%E5%88%9B/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -630,7 +630,7 @@
   </url>
   
   <url>
-    <loc>https://haydenzhy.github.io/tags/%E5%A4%A7%E5%88%9B/</loc>
+    <loc>https://haydenzhy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
