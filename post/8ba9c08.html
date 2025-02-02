@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><!-- hexo injector head_begin start --><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>firework | 梨花先雪</title><meta name="author" content="梨花先雪"><meta name="copyright" content="梨花先雪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="跨年快乐放烟花网页 点击屏幕任意地方即可放烟花！             const canvas &#x3D; document.getElementById(&#39;fireworks-canvas&#39;);     const ctx &#x3D; canvas.getContext(&#39;2d&#39;);      canvas.width &#x3D; canvas.offsetWidth;     canvas.height &#x3D; ca">
+<meta property="og:type" content="article">
+<meta property="og:title" content="firework">
+<meta property="og:url" content="https://haydenzhy.github.io/post/8ba9c08">
+<meta property="og:site_name" content="梨花先雪">
+<meta property="og:description" content="跨年快乐放烟花网页 点击屏幕任意地方即可放烟花！             const canvas &#x3D; document.getElementById(&#39;fireworks-canvas&#39;);     const ctx &#x3D; canvas.getContext(&#39;2d&#39;);      canvas.width &#x3D; canvas.offsetWidth;     canvas.height &#x3D; ca">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/HaydenZHY/jsdelivr@main/image/avatar/avatar2.jpg">
+<meta property="article:published_time" content="2025-01-27T11:28:39.000Z">
+<meta property="article:modified_time" content="2025-01-27T11:34:34.224Z">
+<meta property="article:author" content="梨花先雪">
+<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="烟花">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/HaydenZHY/jsdelivr@main/image/avatar/avatar2.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/HaydenZHY/jsdelivr@main/image/avatar/avatar2.jpg"><link rel="canonical" href="https://haydenzhy.github.io/post/8ba9c08"><link rel="preconnect" href="//cdn.jsdelivr.net"/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 梨花先雪","link":"链接: ","source":"来源: 梨花先雪","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'firework',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-01-27 19:34:34'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 13 || hour >= 13
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"><style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/HaydenZHY/jsdelivr@main/image/avatar/avatar2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fa-solid fa-video"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fa-solid fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fa-solid fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background: #626079"><nav id="nav"><span id="blog-info"><a href="/" title="梨花先雪"><span class="site-name">梨花先雪</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fa-solid fa-video"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fa-solid fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fa-solid fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">firework</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-01-27T11:28:39.000Z" title="发表于 2025-01-27 19:28:39">2025-01-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-27T11:34:34.224Z" title="更新于 2025-01-27 19:34:34">2025-01-27</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="跨年快乐放烟花网页">跨年快乐放烟花网页</h2>
+<p>点击屏幕任意地方即可放烟花！</p>
+<div id="fireworks-container" style="position: relative; width: 100%; height: 100vh; background-color: #000; overflow: hidden;">
+    <canvas id="fireworks-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></canvas>
+</div>
+<script>
+    const canvas = document.getElementById('fireworks-canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    function randomColor() {
+        return `hsl(${Math.random() * 360}, 100%, 50%)`;
+    }
+
+    function randomRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    class Firework {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+            this.color = randomColor();
+            this.particles = [];
+            this.createParticles();
+        }
+
+        createParticles() {
+            for (let i = 0; i < 50; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = randomRange(2, 6);
+                const particle = {
+                    x: this.x,
+                    y: this.y,
+                    angle,
+                    speed,
+                    color: this.color,
+                    life: randomRange(60, 120),
+                    age: 0
+                };
+                this.particles.push(particle);
+            }
+        }
+
+        update() {
+            this.particles.forEach(particle => {
+                particle.x += Math.cos(particle.angle) * particle.speed;
+                particle.y += Math.sin(particle.angle) * particle.speed;
+                particle.age++;
+                if (particle.age >= particle.life) {
+                    particle.speed *= 0.95;
+                }
+            });
+        }
+
+        draw() {
+            this.particles.forEach(particle => {
+                ctx.fillStyle = particle.color;
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
+    }
+
+    const fireworks = [];
+
+    function addFirework(event) {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        const firework = new Firework(x, y);
+        fireworks.push(firework);
+    }
+
+    canvas.addEventListener('click', addFirework);
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        fireworks.forEach((firework, index) => {
+            firework.update();
+            firework.draw();
+            if (firework.particles.every(particle => particle.age >= particle.life)) {
+                fireworks.splice(index, 1);
+            }
+        });
+        requestAnimationFrame(animate);
+    }
+
+    function enterFullScreen() {
+        const elem = document.getElementById('fireworks-container');
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+
+    window.onload = enterFullScreen;
+
+    animate();
+</script></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://haydenzhy.github.io/">梨花先雪</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://haydenzhy.github.io/post/8ba9c08">https://haydenzhy.github.io/post/8ba9c08</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://HaydenZHY.github.io" target="_blank">梨花先雪</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTML/">HTML</a><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a><a class="post-meta__tags" href="/tags/%E7%83%9F%E8%8A%B1/">烟花</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/HaydenZHY/jsdelivr@main/image/avatar/avatar2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/post/bc49d0da" title="从零开始学写脚本【第二天】"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">从零开始学写脚本【第二天】</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/HaydenZHY/jsdelivr@main/image/avatar/avatar2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">梨花先雪</div><div class="author-info__description">言必信，行必果</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/HaydenZHY"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/HaydenZHY" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:243038409@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Welcome to my Blog !</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%A8%E5%B9%B4%E5%BF%AB%E4%B9%90%E6%94%BE%E7%83%9F%E8%8A%B1%E7%BD%91%E9%A1%B5"><span class="toc-number">1.</span> <span class="toc-text">跨年快乐放烟花网页</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/8ba9c08" title="firework">firework</a><time datetime="2025-01-27T11:28:39.000Z" title="发表于 2025-01-27 19:28:39">2025-01-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/bc49d0da" title="从零开始学写脚本【第二天】">从零开始学写脚本【第二天】</a><time datetime="2025-01-26T02:41:56.000Z" title="发表于 2025-01-26 10:41:56">2025-01-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/39ccbdd3" title="从零开始学写脚本【第一天】">从零开始学写脚本【第一天】</a><time datetime="2025-01-24T15:43:56.000Z" title="发表于 2025-01-24 23:43:56">2025-01-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/593f2d9e" title="Mirror Maze">Mirror Maze</a><time datetime="2025-01-23T14:13:32.000Z" title="发表于 2025-01-23 22:13:32">2025-01-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/72b5a919" title="脚本">脚本</a><time datetime="2025-01-23T12:40:22.000Z" title="发表于 2025-01-23 20:40:22">2025-01-23</time></div></div></div></div></div></div></main><footer id="footer" style="background: #626079"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By 梨花先雪</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'HaydenZHY/HaydenZHY.github.io',
+      'data-repo-id': 'R_kgDOMtPJmQ',
+      'data-category-id': 'DIC_kwDOMtPJmc4ClrGo',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script id="canvas_nest" defer="defer" color="121,206,226" opacity="0.7" zIndex="-1" count="88" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="true"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["link[rel=\"canonical\"]","meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/movies/"]):not([href="/books/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404')
+  }
+})</script></div></body></html>
